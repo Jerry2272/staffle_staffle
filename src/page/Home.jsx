@@ -34,7 +34,7 @@ const Home = () => {
             <section
               id="home"
               aria-label={slide.title}
-              className="h-screen flex items-center justify-center text-center px-4 md:px-24 bg-cover bg-center"
+              className="h-screen flex items-center justify-center text-center px-4 md:px-24  bg-cover bg-center"
               style={{
                 backgroundImage: `linear-gradient(90deg, rgba(2,0,36,0.6) 0%, rgba(237,38,37,0.7) 100%), url(${slide.img})`,
                 backgroundSize: 'cover',

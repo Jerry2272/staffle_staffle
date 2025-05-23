@@ -51,7 +51,7 @@ export const Navbar = () => {
 
   return (
 <header
-  className={`  top-0 w-full z-50 transition-transform duration-300 transform  md:flex justify-between items-center lg:h-[96px] h-[14vh] px-[20px] py-[20px] md:px-[100px] md:py-[40px] shadow-lg`}
+  className={`  top-0 w-full relative z-50 transition-transform duration-300 transform  md:flex justify-between items-center lg:h-[96px] h-[14vh] px-[20px] py-[20px] md:px-[100px] md:py-[40px] shadow-lg`}
 >
           <span className="flex items-center justify-between w-full md:w-auto">
         <Link to="/">
@@ -116,7 +116,7 @@ export const Navbar = () => {
 
       {/* Mobile Navbar */}
       {nav && (
-        <nav className="md:hidden flex flex-col gap-4 bg-white text-activeColor p-[20px] absolute top-full left-0 w-full z-[999] shadow-lg transition-all duration-300 ease-in-out">
+        <nav className="md:hidden flex flex-col gap-4 bg-white h-[70vh] items-center justify-center g-[40px] text-activeColor p-[20px] absolute top-full left-0 w-full z-[999] shadow-lg transition-all duration-300 ease-in-out">
           {NavItems.map((item, i) => (
             <div key={i} className="flex flex-col gap-2">
               {item.link ? (
