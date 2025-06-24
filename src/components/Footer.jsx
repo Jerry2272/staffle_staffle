@@ -54,7 +54,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="mt-10 text-center text-sm text-gray-500 border-t border-gray-200 pt-4">
-        &copy; {new Date().getFullYear()} Grace Impact Radio. All rights reserved.
+        &copy; {new Date().getFullYear()} Staffle. All rights reserved.
       </div>
     </footer>
   );
