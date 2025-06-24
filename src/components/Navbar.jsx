@@ -1,6 +1,5 @@
 import { FaBars, FaChevronDown } from 'react-icons/fa6';
-import Logo from '../assets/grace_Impact_logo.png';
-
+import Logo from '../assets/staffle-logo.png';
 import {  useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -51,7 +50,7 @@ export const Navbar = () => {
 
   return (
 <header
-  className={`  top-0 w-full relative z-50 transition-transform duration-300 transform  md:flex justify-between items-center lg:h-[96px] h-[14vh] px-[20px] py-[20px] md:px-[100px] md:py-[40px] shadow-lg`}
+  className={`  top-0 w-full relative z-50 transition-transform duration-300 transform  md:flex justify-between bg-[#0b001a]  items-center lg:h-[96px] h-[14vh] px-[20px] py-[20px] md:px-[100px] md:py-[40px] shadow-lg`}
 >
           <span className="flex items-center justify-between w-full md:w-auto">
         <Link to="/">
@@ -72,9 +71,9 @@ export const Navbar = () => {
                 to={item.link}
                 className={({ isActive }) =>
                   
-                  `${isActive ? 'text-activeColor' : 'text-navColor'}
+                  `${isActive ? 'text-white' : 'text-white'}
                   text-[16px] font-[600] font-manRope hover:text-activeColor transition-all
-                  ${item.name === 'Contact Us' ? 'bg-[#E12727] text-white py-3 px-5 rounded-[8px] hover:text-white hover:bg-[#ED2625]' : ''}
+                  ${item.name === 'Contact Us' ? 'bg-[#E12727] bg-gradient from-slate-950 border-t-yellow-950 text-white py-3 px-5 hover:text-white hover:bg-[#ED2625] ' : ''}
                   `
                 }
               >

@@ -40,6 +40,9 @@
     background-position: right ;
 }
 
+.slick-initialized .slick-slide{
+    border-radius: 0px;
+}
 
 @media (min-width: 992px) {
     .pro{

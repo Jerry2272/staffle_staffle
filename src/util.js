@@ -1,8 +1,5 @@
 // hero Slide
-import slide1 from '../src/assets/hero_banner_slide1.jpg'
-import slide2 from '../src/assets/hero_banner_slide2.jpg'
-import slide3 from '../src/assets/hero_banner_slide3.jpg'
-import slide4 from '../src/assets/hero_banner_slide4.jpg'
+import slide1 from '../src/assets/staffle.jpg'
 
 // mondayschedule images 
 import img1 from '../src/assets/radio.jpg'
@@ -20,24 +17,9 @@ import speakerImg from '../src/assets/jakes.jpg'
 export const HeroSlide = [
     {
         img: slide1,
-        title: 'WELCOME TO GRACE IMPACT RADIO',
-        description: 'Word, Music, amd Entertainment that ignite your Faith.'
+        title: 'HIRING AND GETTING HIRED JUST GOT ALOT EASIER',
+        description: 'Get the best of both worlds . Whether it’s increasing your chances of getting hired or speeding up the process of hiring great talents for your company, Staffle’s got you covered!'
     },
-    {
-        img: slide2,    
-        title: 'CHANGING THE ATMOSPHERE',
-        // description: 'Precision Hydrographic Surveys.'
-    },
-    {
-        img: slide3,
-        title: 'A BREATH FRESH OF AIR',
-        description: 'Unlock the Power of GIS'
-    },
-    {
-        img: slide4,
-        title: 'Visualize. Analyze. Optimize.',
-        description: 'Unlock the Power of GIS'
-    }
 ];
 
 // programmes | schedule 
