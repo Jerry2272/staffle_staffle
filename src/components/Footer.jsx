@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Branding */}
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-red-700">Grace Impact Radio</h2>
+          <h2 className="text-2xl font-bold mb-4 text-red-700">Staffle</h2>
           <p className="text-sm">
             Inspiring lives through Word, Music, and Meaningful Conversations.
           </p>
