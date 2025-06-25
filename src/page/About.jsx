@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import Footer from "../components/Footer";
-import HeroImg from "../assets/mic.jpg";
+import HeroImg from "../assets/about_bg.jpg";
 import Vision from "../assets/vision.jpg";
 import Mission from "../assets/mision.jpg";
 
