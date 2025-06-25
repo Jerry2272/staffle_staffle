@@ -1,7 +1,8 @@
 import { Navbar } from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroImg from "../assets/mic.jpg";
-import AboutPhoto from "../assets/hero_banner_slide1.jpg";
+import Vision from "../assets/vision.jpg";
+import Mission from "../assets/mision.jpg";
 
 const About = () => {
   return (
@@ -12,101 +13,73 @@ const About = () => {
       <section
         className="min-h-[75vh] flex flex-col justify-center items-center text-white px-6 text-center"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(${HeroImg})`,
+          backgroundImage: `linear-gradient(90deg, rgba(11, 0, 26, 1) 10%, rgba(11, 0, 26, 0.70) 100%), url(${HeroImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 uppercase">
-          We Are Grace Impact Radio
+          We At Staffle
         </h1>
         <p className="text-lg md:text-xl max-w-2xl">
-          Broadcasting hope, faith, and purpose — every hour, every day.
+          Staffle is a career support and talent solutions platform built to empower early-career professionals and help organizations attract the right talent. We equip job seekers with tools, resources, and community to thrive in today’s workplace, while also supporting employers with strategic recruitment solutions that emphasize equity, culture fit, and long-term growth.
         </p>
       </section>
 
-      {/* STORY SECTION */}
+      {/* BRAND IDENTITY */}
       <section className="py-20 px-6 md:px-20 bg-white text-gray-800">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 uppercase text-[#0b001a]">Our Identity as a Brand</h2>
           <p className="text-lg leading-relaxed">
-            Grace Impact Radio started as a vision to bring the light of God word to homes around the world. 
-            In a noisy world, we offer a steady stream of truth, music that heals, and voices that uplift.
+            Our identity blends modern professionalism with warmth, combining expert recruitment strategy with genuine care for both candidates and employers. Every element from our logo to our color palette reflects our vision and core values.
           </p>
         </div>
       </section>
-
-      {/* IMAGE SPLIT SECTION */}
-      <section className="grid md:grid-cols-2 gap-0">
-        <img src={AboutPhoto} alt="Studio" className="w-full h-full object-cover" />
-        <div className="flex flex-col justify-center bg-red-700 text-white p-10 md:p-16">
-          <h3 className="text-3xl font-bold mb-4">What Drives Us</h3>
-          <p className="text-lg leading-relaxed">
-            We are more than a radio station. We are a mission — to see lives changed, faith ignited, and communities built through the airwaves.
-          </p>
-        </div>
-      </section>
-
-
-<section className="bg-red-700 px-6 py-16 md:px-[5em]">
-  <div className="max-w-4xl mx-auto bg-red-500 rounded-xl shadow-lg p-10 text-white">
-    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Who We Are</h2>
-
-    <div className="space-y-8">
-      {/* Mission */}
-      <div>
-        <h3 className="text-2xl font-semibold mb-2">Our Mission</h3>
-        <p className="text-white leading-relaxed">
-          To inspire lives through the transformative power of the Word, Music, and meaningful conversations.
-        </p>
-      </div>
-
-      {/* Vision */}
-      <div>
-        <h3 className="text-2xl font-semibold mb-2">Our Vision</h3>
-        <p className="text-white leading-relaxed">
-          To become a global voice of hope, healing, and faith through radio broadcasting.
-        </p>
-      </div>
-
-      {/* Core Values */}
-      <div>
-        <h3 className="text-2xl font-semibold mb-2">Our Core Values</h3>
-        <ul className="list-disc list-inside space-y-1 text-white">
-          <li>Faith</li>
-          <li>Excellence</li>
-          <li>Integrity</li>
-          <li>Impact</li>
-        </ul>
-      </div>
-    </div>
+{/* VISION SECTION */}
+<section className="grid md:grid-cols-2 gap-12 py-20 px-10 md:px-[5em] justify-center items-center">
+  <div className="relative overflow-hidden">
+    <img src={Vision} alt="Vision" className="w-[85%] object-cover rounded-lg shadow-lg" />
+    <div
+      className="absolute w-[20%] h-[30vh] right-0 bottom-0 rounded-tr-[3rem]"
+      style={{
+        backgroundImage: `linear-gradient(90deg, rgba(11, 0, 26, 1), rgba(11, 0, 26, 1))`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    ></div>
+  </div>
+  <div className="flex flex-col justify-center space-y-6">
+    <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">Our Vision</h2>
+    <p className="text-gray-700 leading-[30px]">
+      To become the leading force in career navigation and talent placement, where every individual finds purpose-driven roles with confidence and clarity.
+    </p>
   </div>
 </section>
 
-      {/* WHY IT MATTERS */}
-      <section className="bg-gray-100 py-20 justify-center items-center lg:grid grid-cols-2">
-      
-        <div className="max-w-4xl mx-auto p-6">
-          <h2 className="text-3xl font-bold mb-6">Why It Matters</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            In a world filled with distractions and despair, we bring clarity, comfort, and conviction. Whether you are driving, working, or praying — Grace Impact Radio is your companion in truth.
-          </p>
-        </div>
-          <div>
-        <img src={AboutPhoto} alt="Studio" className="w-full h-full object-cover" />
-        </div>
-      </section>
+{/* MISSION SECTION */}
+<section className="grid md:grid-cols-2 gap-12 py-20 px-10 md:px-[5em] justify-center items-center">
 
-      {/* CTA SECTION */}
-      <section className="bg-red-700 text-white py-20 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let’s Make Impact Together</h2>
-        <p className="mb-6 text-lg">
-          Your support helps us reach hearts around the world with the gospel and more.
-        </p>
-        <button className="bg-red-600 hover:bg-red-700 transition px-8 py-3 rounded-lg text-lg font-semibold">
-          Partner With Us
-        </button>
-      </section>
+  <div className="flex flex-col justify-center space-y-6">
+    <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">Our Mission</h2>
+    <p className="text-gray-700 leading-[30px]">
+      We are dedicated to guiding job seekers and employers through every stage of the hiring journey with precision, empathy, and expertise. <br /><br />
+      We help talents uncover opportunities that match their skills and aspirations, while supporting businesses in building reliable, growth-focused teams. <br /><br />
+      Our mission is to simplify the recruitment process, foster professional development, and create lasting partnerships that drive both individual success and organizational excellence.
+    </p>
+  </div>
+    <div className="relative overflow-hidden">
+    <img src={Mission} alt="Mission" className="w-[85%] object-cover shadow-lg" />
+    <div
+      className="absolute w-[20%] h-[30vh] right-0 bottom-0 rounded-tr-[3rem]"
+      style={{
+        backgroundImage: `linear-gradient(90deg, rgba(11, 0, 26, 1), rgba(11, 0, 26, 1))`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    ></div>
+  </div>
+</section>
+
 
       <Footer />
     </>

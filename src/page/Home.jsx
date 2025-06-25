@@ -80,7 +80,7 @@ const Home = () => {
                   href="https://api.whatsapp.com/send?phone=%2B2349110586300"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition"
+                  className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 font-medium shadow-md hover:shadow-lg transition"
                 >
                   Let’s get you started!
                 </a>
@@ -95,7 +95,7 @@ const Home = () => {
         <div className="relative overflow-hidden">
           <img src={About} alt="About" className="w-[85%] object-cover rounded-lg shadow-lg" />
           <div
-            className="absolute w-[20%] h-[30vh] right-0 bottom-0 rounded-tl-[3rem]"
+            className="absolute w-[20%] h-[30vh] right-0 bottom-0 rounded-tr-[3rem]"
             style={{
               backgroundImage: `linear-gradient(90deg, rgba(11, 0, 26, 1), rgba(11, 0, 26, 1))`,
               backgroundSize: 'cover',
@@ -104,13 +104,15 @@ const Home = () => {
           ></div>
         </div>
         <div className="flex flex-col justify-center space-y-6">
-          <h2 className="text-3xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">
             About <br className="hidden md:block" /> Staffle
           </h2>
           <p className="text-gray-700 leading-[30px]">
             Staffle is a modern staffing and career solutions company designed to bridge the gap between talented professionals and forward-thinking organizations. Rooted in precision, human connection, and growth. Staffle offers more than recruitment—we navigate careers with intention and match employers with the right people for long-term success.
           </p>
-          <a href="/about" className="flex items-center gap-2 text-red-600 hover:text-red-800 font-semibold">
+          <a href="/about"
+          className=" gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 w-[30%] py-3 text-center font-medium shadow-md hover:shadow-lg transition"
+                >
             See More
           </a>
         </div>
@@ -129,7 +131,7 @@ const Home = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl p-6 border-l-4 border-red-600 transition duration-300"
+              className="bg-white rounded-xl shadow-md hover:shadow-xl p-6 border-l-4 border-[#0b001a] transition duration-300"
             >
               <div className="mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold mb-2 text-[#0b001a]">{service.title}</h3>
@@ -141,8 +143,8 @@ const Home = () => {
         <div className="mt-14 text-center">
           <a
             href="#contact"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold shadow-md transition"
-          >
+           className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition"
+                >
             Contact Us to Get Started
           </a>
         </div>

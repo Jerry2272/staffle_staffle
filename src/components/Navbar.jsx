@@ -73,7 +73,7 @@ export const Navbar = () => {
                   
                   `${isActive ? 'text-white' : 'text-white'}
                   text-[16px] font-[600] font-manRope hover:text-activeColor transition-all
-                  ${item.name === 'Contact Us' ? 'bg-[#E12727] bg-gradient from-slate-950 border-t-yellow-950 text-white py-3 px-5 hover:text-white hover:bg-[#ED2625] ' : ''}
+                  ${item.name === 'Contact Us' ? ' bg-gradient-to-r from-orange-500 to-red-700 text-white py-3 px-5 hover:text-white hover:bg-[#ED2625] ' : ''}
                   `
                 }
               >
