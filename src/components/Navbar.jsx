@@ -115,13 +115,13 @@ export const Navbar = () => {
 
       {/* Mobile Navbar */}
       {nav && (
-        <nav className="md:hidden flex flex-col gap-4 bg-white h-[70vh] items-center justify-center g-[40px] text-activeColor p-[20px] absolute top-full left-0 w-full z-[999] shadow-lg transition-all duration-300 ease-in-out">
+        <nav className="md:hidden flex flex-col gap-4 bg-white h-[70vh] items-center justify-center g-[40px] text-white p-[20px] absolute top-full left-0 w-full z-[999] shadow-lg transition-all duration-300 ease-in-out">
           {NavItems.map((item, i) => (
             <div key={i} className="flex flex-col gap-2">
               {item.link ? (
                 <Link
                   to={item.link}
-                  className={`text-navColor text-[16px] font-[600] font-manRope hover:text-activeColor transition-all 
+                  className={`text-white text-[16px] font-[600] font-manRope hover:text-activeColor transition-all 
                   
                   ${item.name === 'Contact Us' ? 'bg-[#ED2625] text-white   py-3 px-3 text-center rounded-[8px] hover:text-white hover:bg-[#ED2625]' : ''}
                   
@@ -133,7 +133,7 @@ export const Navbar = () => {
               ) : (
                 <div>
                   <span
-                    className="text-navColor font-[600] font-manRope cursor-pointer flex items-center gap-1"
+                    className="text-white font-[600] font-manRope cursor-pointer flex items-center gap-1"
                     onClick={() => toggleDropdown(item.name)}
                   >
                     {item.name}

@@ -111,7 +111,7 @@ const Home = () => {
             Staffle is a modern staffing and career solutions company designed to bridge the gap between talented professionals and forward-thinking organizations. Rooted in precision, human connection, and growth. Staffle offers more than recruitment—we navigate careers with intention and match employers with the right people for long-term success.
           </p>
           <a href="/about"
-          className=" gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 w-[30%] py-3 text-center font-medium shadow-md hover:shadow-lg transition"
+          className=" gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 md:w-[30%] py-3 text-center font-medium shadow-md hover:shadow-lg transition"
                 >
             See More
           </a>
