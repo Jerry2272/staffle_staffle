@@ -4,8 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { HeroSlide } from "../util";
 import Footer from "../components/Footer";
-import About from '../assets/about_us.avif';
+import About from '../assets/about.jpg';
 import { FaBriefcase, FaUserTie, FaPeopleArrows, FaFileAlt, FaLinkedin, FaComments } from 'react-icons/fa';
+import Communitymanager from "../molecules/Communitymanager";
+import Testimonial from "../molecules/Testimonial";
 
 const services = [
   {
@@ -45,6 +47,23 @@ const services = [
     icon: <FaComments className="text-red-600 text-3xl" />
   },
 ];
+
+
+
+// const testimonials = [
+//   {
+//     name: "Joy Nkem",
+//     role: "Software Engineer at FinTech360",
+//     feedback: "Staffle helped me land my dream job in less than a month. Their interview prep and LinkedIn optimization were game-changers!",
+//     img: "/path-to-testimonial-img.jpg"
+//   },
+//   {
+//     name: "Mark Ajayi",
+//     role: "HR Manager at TechNova",
+//     feedback: "The hiring process was seamless. We got qualified candidates fast and with minimal stress.",
+//     img: "/path-to-testimonial-img.jpg"
+//   },
+// ];
 
 const Home = () => {
   const heroSettings = {
@@ -91,32 +110,47 @@ const Home = () => {
       </Slider>
 
       {/* About Section */}
-      <section className="grid md:grid-cols-2 gap-12 py-20 px-10 md:px-[5em] justify-center items-center">
-        <div className="relative overflow-hidden">
-          <img src={About} alt="About" className="w-[85%] object-cover rounded-lg shadow-lg" />
-          <div
-            className="absolute w-[20%] h-[30vh] right-0 bottom-0 rounded-tr-[3rem]"
-            style={{
-              backgroundImage: `linear-gradient(90deg, rgba(11, 0, 26, 1), rgba(11, 0, 26, 1))`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
-          ></div>
-        </div>
-        <div className="flex flex-col justify-center space-y-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">
-            About <br className="hidden md:block" /> Staffle
-          </h2>
-          <p className="text-gray-700 leading-[30px]">
-            Staffle is a modern staffing and career solutions company designed to bridge the gap between talented professionals and forward-thinking organizations. Rooted in precision, human connection, and growth. Staffle offers more than recruitment—we navigate careers with intention and match employers with the right people for long-term success.
-          </p>
-          <a href="/about"
-          className=" gap-3 bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 md:w-[30%] py-3 text-center font-medium shadow-md hover:shadow-lg transition"
-                >
-            See More
-          </a>
-        </div>
-      </section>
+<section className="grid md:grid-cols-2 gap-12 py-20 px-6 md:px-[5em] bg-white items-center">
+  {/* Image Side */}
+  <div className="relative">
+    <img
+      src={About}
+      alt="About Staffle"
+      className="w-full object-cover shadow-lg border-l-[10px] border-[#0b001a] rounded-tl-[62px] rounded-tr-[62px]"
+    />
+    <div
+      className="absolute bottom-0 left-0 w-[20%] md:w-[15%] h-[50%] bg-[#0b001a] rounded-tr-[3rem]"
+    />
+  </div>
+
+  {/* Text Side */}
+  <div className="flex flex-col justify-center space-y-6">
+    <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a] leading-tight">
+      More Than Staffing. <br /> We Build Careers.
+    </h2>
+
+    <p className="text-gray-700 text-lg leading-[32px]">
+      At <span className="font-semibold text-[#0b001a]">Staffle</span>, we go beyond recruitment.
+      We create human-centered pathways for professionals and businesses to thrive together.
+      Whether you're job-hunting, hiring, or rebranding yourself—we provide the support and strategy
+      that moves you forward with purpose.
+    </p>
+
+    <ul className="list-disc list-inside text-gray-600 space-y-1">
+      <li>Built on integrity, connection & growth</li>
+      <li>Tailored career services and hiring solutions</li>
+      <li>A trusted bridge between talent and opportunity</li>
+    </ul>
+
+    <a
+      href="/about"
+      className="bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 w-fit rounded-md font-medium shadow-md hover:shadow-lg transition"
+    >
+      Learn More About Us
+    </a>
+  </div>
+</section>
+
 
       {/* Services Section */}
       <section className="bg-gray-100 py-20 px-6 md:px-20">
@@ -149,6 +183,13 @@ const Home = () => {
           </a>
         </div>
       </section>
+
+      {/* communityMembers Section */}
+<section className="py-20 px-6 md:px-20 bg-white">
+    <Communitymanager />
+</section>
+<Testimonial />
+
 
       <Footer />
     </>

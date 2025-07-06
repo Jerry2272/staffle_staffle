@@ -2,7 +2,7 @@ import { Navbar } from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroImg from "../assets/about_bg.jpg";
 import Vision from "../assets/vision.jpg";
-import Mission from "../assets/mision.jpg";
+import Mission from "../assets/missions.jpg";
 
 const About = () => {
   return (
@@ -38,7 +38,7 @@ const About = () => {
 {/* VISION SECTION */}
 <section className="grid md:grid-cols-2 gap-12  px-10 md:px-[5em] justify-center items-center">
   <div className="relative overflow-hidden">
-    <img src={Vision} alt="Vision" className="w-[85%] object-cover rounded-lg shadow-lg" />
+    <img src={Vision} alt="Vision" className="w-[85%] object-cover rounded-lg shadow-lg   border-l-[10px] border-[#0b001a]" style={{borderTopLeftRadius: '62px' , borderTopRightRadius: '62px'}} />
     <div
       className="absolute w-[20%] h-[30vh] right-0 bottom-0 rounded-tr-[3rem]"
       style={{
@@ -68,9 +68,9 @@ const About = () => {
     </p>
   </div>
     <div className="relative overflow-hidden">
-    <img src={Mission} alt="Mission" className="w-[85%] object-cover shadow-lg" />
+    <img src={Mission} alt="Mission" className="w-[85%] object-cover shadow-lg   border-l-[10px] border-[#0b001a]" style={{borderTopLeftRadius: '62px' , borderTopRightRadius: '62px'}} />
     <div
-      className="absolute w-[20%] h-[30vh] left-0 bottom-0 rounded-tl-[3rem]"
+      className="absolute w-[16%] h-[30vh] left-0 bottom-0 rounded-tr-[3rem]"
       style={{
         backgroundImage: `linear-gradient(90deg, rgba(11, 0, 26, 1), rgba(11, 0, 26, 1))`,
         backgroundSize: 'cover',
