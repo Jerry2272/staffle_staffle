@@ -19,9 +19,9 @@ const About = () => {
         }}
       >
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4 uppercase">
-          We At Staffle
+         What is Staffle?
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl">
+        <p className="text-lg md:text-xl max-w-3xl">
           Staffle is a career support and talent solutions platform built to empower early-career professionals and help organizations attract the right talent. We equip job seekers with tools, resources, and community to thrive in today’s workplace, while also supporting employers with strategic recruitment solutions that emphasize equity, culture fit, and long-term growth.
         </p>
       </section>
@@ -79,7 +79,14 @@ const About = () => {
     ></div>
   </div>
 </section>
-
+         {/* CTA SECTION */}
+      <section className="py-12 px-6 text-center w-[90%] mx-auto bg-[#0b001a] text-white">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4">Ready to Grow with Staffle?</h2>
+        <p className="mb-6">Explore our programs, connect with experts, or post your job today.</p>
+        <a href="/contact" className="bg-white text-[#0b001a] px-6 py-3 font-medium rounded-md shadow-md hover:bg-gray-100 transition">
+          Get Started
+        </a>
+      </section>
 
       <Footer />
     </>
