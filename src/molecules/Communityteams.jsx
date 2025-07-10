@@ -1,6 +1,7 @@
 import Carousel from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import team1 from "/src/assets/jerry-pic.png"
 
 const Communitymanager = () => {
   const settings = {
@@ -23,7 +24,7 @@ const Communitymanager = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1,
           centerPadding: "20px",
         },
       },
@@ -38,24 +39,17 @@ const Communitymanager = () => {
   };
 
   const communityMembers = [
-    { name: "Ada Obasi", role: "Career Coach", img: "/src/assets/jerry-pic.png" },
-    { name: "David Etim", role: "LinkedIn Strategist", img: "/src/assets/jerry-pic.png" },
-    { name: "Fatima Bello", role: "Employer Relations Manager", img: "/src/assets/jerry-pic.png" },
-    { name: "Whiney Whiney", role: "Community Lead", img: "/src/assets/jerry-pic.png" },
-    { name: "Rita Okafor", role: "CV Specialist", img: "/src/assets/jerry-pic.png" },
-    { name: "Whiney Whiney", role: "Content Writer", img: "/src/assets/jerry-pic.png" },
-    { name: "Michael Eze", role: "Full Stack Developer", img: "/src/assets/jerry-pic.png" },
-    { name: "Zainab Lawal", role: "Interview Coach", img: "/src/assets/jerry-pic.png" },
-    { name: "Chisom Nwankwo", role: "Brand Strategist", img: "/src/assets/jerry-pic.png" },
-    { name: "Tunde Afolabi", role: "Resume Consultant", img: "/src/assets/jerry-pic.png" },
-    { name: "Lilian Uche", role: "Talent Acquisition Partner", img: "/src/assets/jerry-pic.png" },
-    { name: "Samuel Dike", role: "HR Tech Advisor", img: "/src/assets/jerry-pic.png" }
+    { name: "Whitney Johnson", role: "HR/ Operations assistant. Social media strategist & Volunteer Lead!", img: team1 },
+    { name: "Ms. Roberts", role: "Founder/ Lead HR advisor", img: team1 },
+    { name: "Barile", role: "Operation manager & LinkedIn strategist", img: team1 },
+    { name: "Bliss", role: "Graphics designer & Video editor", img: team1 },
+    { name: "Cheryl", role: "Executive Assistant & Employer Relations Manager", img: team1 },
   ];
 
   return (
     <section className="py-16 px-4 md:px-12 bg-white">
       <div className="text-center mb-10">
-      <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">Meet Our Community Members</h2>
+      <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">Meet The Team!</h2>
     <p className="text-gray-600 py-4 mt-2 max-w-xl mx-auto">A vibrant network of professionals shaping the future of work together.</p>
       </div>
       <Carousel {...settings}>

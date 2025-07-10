@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaTiktok, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,45 +8,34 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold mb-4 text-red-700">Staffle</h2>
           <p className="text-sm">
-            Inspiring lives through Word, Music, and Meaningful Conversations.
+            At Staffle, we are redefining growth—one conversation, one song, and one life at a time. Through faith-inspired messages, uplifting music, and meaningful dialogue, we empower individuals to live purposefully and pursue personal and professional transformation.
           </p>
         </div>
 
         {/* Social Handles */}
         <div className="md:text-right">
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-          <div className="flex md:justify-end gap-4 text-red-700 text-lg">
-            <a
-              href="https://facebook.com/yourpage"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-black transition"
-            >
+          <div className="flex md:justify-end flex-wrap gap-4 text-red-700 text-lg">
+            <a href="https://facebook.com/share/1HMahxstVe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
               <FaFacebookF />
             </a>
-            <a
-              href="https://twitter.com/yourhandle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-black transition"
-            >
+            <a href="https://x.com/staffle_?s=21" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
               <FaTwitter />
             </a>
-            <a
-              href="https://instagram.com/yourhandle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-black transition"
-            >
+            <a href="https://instagram.com/staffle_?igsh=c2llcWpoZW85bGxq&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
               <FaInstagram />
             </a>
-            <a
-              href="https://youtube.com/yourchannel"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-black transition"
-            >
+            <a href="https://www.linkedin.com/company/staffleresource/" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
+              <FaLinkedin />
+            </a>
+            <a href="https://tiktok.com/@staffle__?_t=ZM-8wHxRlP4SeL&_r=1" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
+              <FaTiktok title="TikTok (Primary)" />
+            </a>
+            <a href="https://youtube.com/yourchannel" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
               <FaYoutube />
+            </a>
+            <a href="https://tiktok.com/@staffled_?_t=ZS-8wjK7OIQrXp&_r=1" target="_blank" rel="noopener noreferrer" className="hover:text-black transition">
+              <FaTiktok title="TikTok (Alternate)" />
             </a>
           </div>
         </div>

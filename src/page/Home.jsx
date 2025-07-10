@@ -6,7 +6,7 @@ import { HeroSlide } from "../util";
 import Footer from "../components/Footer";
 import About from '../assets/about.jpg';
 import { FaBriefcase, FaUserTie, FaPeopleArrows, FaFileAlt, FaLinkedin, FaComments } from 'react-icons/fa';
-import Communitymanager from "../molecules/Communitymanager";
+import Communityteams from "../molecules/Communityteams";
 import Testimonial from "../molecules/Testimonial";
 
 const services = [
@@ -132,7 +132,7 @@ const Home = () => {
     <p className="text-gray-700 text-lg leading-[32px]">
       At <span className="font-semibold text-[#0b001a]">Staffle</span>, we go beyond recruitment.
       We create human-centered pathways for professionals and businesses to thrive together.
-      Whether you're job-hunting, hiring, or rebranding yourself—we provide the support and strategy
+      Whether you are job-hunting, hiring, or rebranding yourself—we provide the support and strategy
       that moves you forward with purpose.
     </p>
 
@@ -186,7 +186,7 @@ const Home = () => {
 
       {/* communityMembers Section */}
 <section className="py-20 px-6 md:px-20 bg-white">
-    <Communitymanager />
+    <Communityteams />
 </section>
 <Testimonial />
 
