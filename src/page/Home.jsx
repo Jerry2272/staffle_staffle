@@ -110,51 +110,51 @@ const Home = () => {
         ))}
       </Slider>
 
-      {/* About Section */}
-<section className="bg-white py-20 px-6 md:px-[5em]">
-  <div className="grid md:grid-cols-2 gap-12 items-center">
-    
+{/* About Section */}
+<section
+  className="py-20 px-4 md:px-24"
+  style={{
+    background: "linear-gradient(135deg, #fff 60%, #fff 100%)"
+  }}
+>
+  <div className="grid md:grid-cols-2 gap-16 items-center">
     {/* Image Side */}
-    <div className="relative">
+    <div className="relative flex justify-center">
       <img
         src={About}
         alt="About Staffle"
-        className="w-full object-cover rounded-[2rem] shadow-xl border-l-[12px] border-[#0b001a]"
+        className="w-full max-w-md object-cover rounded-3xl shadow-2xl border-l-8 border-[#0b001a]"
       />
-      <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#0b001a] rounded-full blur-2xl opacity-20 z-[-1]" />
+      <div className="absolute -bottom-8 -left-8 w-36 h-36 bg-[#0b001a] rounded-full blur-2xl opacity-20 z-[-1]" />
     </div>
-
     {/* Text Side */}
-    <div className="space-y-6">
-      <h2 className="text-4xl md:text-5xl font-bold text-[#0b001a] leading-tight">
-        More Than Staffing. <br /> We Build Careers.
+    <div className="space-y-8 bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl p-10 border-l-4 border-[#0b001a]">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#0b001a] leading-tight mb-4">
+        More Than Staffing.<br />We Build Careers.
       </h2>
-
       <p className="text-gray-700 text-lg leading-relaxed">
         At <span className="font-semibold text-[#0b001a]">Staffle</span>, we go beyond recruitment.
         We create human-centered pathways for professionals and businesses to thrive together.
         Whether you’re job-hunting, hiring, or rebranding yourself—we provide support and strategy
         that move you forward with purpose.
       </p>
-
-      <ul className="space-y-2 text-gray-600">
-        <li className="flex items-center gap-2">
-          <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+      <ul className="space-y-3 text-gray-600">
+        <li className="flex items-center gap-3">
+          <span className="w-3 h-3 bg-red-600 rounded-full"></span>
           Built on integrity, connection & growth
         </li>
-        <li className="flex items-center gap-2">
-          <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+        <li className="flex items-center gap-3">
+          <span className="w-3 h-3 bg-red-600 rounded-full"></span>
           Tailored career services and hiring solutions
         </li>
-        <li className="flex items-center gap-2">
-          <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+        <li className="flex items-center gap-3">
+          <span className="w-3 h-3 bg-red-600 rounded-full"></span>
           A trusted bridge between talent and opportunity
         </li>
       </ul>
-
       <a
         href="/about"
-        className="mt-6 inline-block bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition"
+        className="mt-8 inline-block bg-gradient-to-r from-orange-500 to-red-700 text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition"
       >
         Learn More About Us
       </a>
@@ -164,11 +164,20 @@ const Home = () => {
 
 
 
+
       {/* Services Section */}
-      <section className="bg-gray-100 py-20 px-6 md:px-20">
+      <section 
+       className="py-20 px-6 md:px-20 text-white"
+      style={{
+        backgroundImage:
+          "linear-gradient(135deg, rgba(11,0,26,0.85) 60%, rgba(255,87,34,0.7 )), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a]">Our Services</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-600 text-lg">
+          <h2 className="text-3xl md:text-5xl font-bold text-white">Our Services</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-white text-lg">
             Empowering professionals and businesses with smart staffing, job readiness, and hiring solutions.
           </p>
         </div>
@@ -200,9 +209,8 @@ const Home = () => {
 <section className="py-20 px-6 md:px-20 bg-white">
     <Communityteams />
 </section>
-<Testimonial />
-
 <ComingSoon />
+<Testimonial />
 
       <Footer />
     </>
