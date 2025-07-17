@@ -3,7 +3,7 @@ import testimonial2 from "/src/assets/Testimonial_2.mp4"
 
 const Testimonial = () => {
   const testimonials = [
-    { name: "Ada Obasi", role: "Career Coach", video: testimonial1},
+    { name: "Esther Adeseyoju", role: "Community Member", video: testimonial1},
     { name: "Ufuoma Jefta Ojere", role: "Staffle's Community Member", video: testimonial2},
   ];
 

@@ -8,6 +8,7 @@ import About from '../assets/about.jpg';
 import { FaBriefcase, FaUserTie, FaPeopleArrows, FaFileAlt, FaLinkedin, FaComments } from 'react-icons/fa';
 import Communityteams from "../molecules/Communityteams";
 import Testimonial from "../molecules/Testimonial";
+import ComingSoon from "../molecules/Upcoming";
 
 const services = [
   {
@@ -110,46 +111,57 @@ const Home = () => {
       </Slider>
 
       {/* About Section */}
-<section className="grid md:grid-cols-2 gap-12 py-20 px-6 md:px-[5em] bg-white items-center">
-  {/* Image Side */}
-  <div className="relative">
-    <img
-      src={About}
-      alt="About Staffle"
-      className="w-full object-cover shadow-lg border-l-[10px] border-[#0b001a] rounded-tl-[62px] rounded-tr-[62px]"
-    />
-    <div
-      className="absolute bottom-0 left-0 w-[20%] md:w-[15%] h-[50%] bg-[#0b001a] rounded-tr-[3rem]"
-    />
-  </div>
+<section className="bg-white py-20 px-6 md:px-[5em]">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    
+    {/* Image Side */}
+    <div className="relative">
+      <img
+        src={About}
+        alt="About Staffle"
+        className="w-full object-cover rounded-[2rem] shadow-xl border-l-[12px] border-[#0b001a]"
+      />
+      <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-[#0b001a] rounded-full blur-2xl opacity-20 z-[-1]" />
+    </div>
 
-  {/* Text Side */}
-  <div className="flex flex-col justify-center space-y-6">
-    <h2 className="text-3xl md:text-5xl font-bold text-[#0b001a] leading-tight">
-      More Than Staffing. <br /> We Build Careers.
-    </h2>
+    {/* Text Side */}
+    <div className="space-y-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#0b001a] leading-tight">
+        More Than Staffing. <br /> We Build Careers.
+      </h2>
 
-    <p className="text-gray-700 text-lg leading-[32px]">
-      At <span className="font-semibold text-[#0b001a]">Staffle</span>, we go beyond recruitment.
-      We create human-centered pathways for professionals and businesses to thrive together.
-      Whether you are job-hunting, hiring, or rebranding yourself—we provide the support and strategy
-      that moves you forward with purpose.
-    </p>
+      <p className="text-gray-700 text-lg leading-relaxed">
+        At <span className="font-semibold text-[#0b001a]">Staffle</span>, we go beyond recruitment.
+        We create human-centered pathways for professionals and businesses to thrive together.
+        Whether you’re job-hunting, hiring, or rebranding yourself—we provide support and strategy
+        that move you forward with purpose.
+      </p>
 
-    <ul className="list-disc list-inside text-gray-600 space-y-1">
-      <li>Built on integrity, connection & growth</li>
-      <li>Tailored career services and hiring solutions</li>
-      <li>A trusted bridge between talent and opportunity</li>
-    </ul>
+      <ul className="space-y-2 text-gray-600">
+        <li className="flex items-center gap-2">
+          <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+          Built on integrity, connection & growth
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+          Tailored career services and hiring solutions
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+          A trusted bridge between talent and opportunity
+        </li>
+      </ul>
 
-    <a
-      href="/about"
-      className="bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 w-fit rounded-md font-medium shadow-md hover:shadow-lg transition"
-    >
-      Learn More About Us
-    </a>
+      <a
+        href="/about"
+        className="mt-6 inline-block bg-gradient-to-r from-orange-500 to-red-700 text-white px-6 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition"
+      >
+        Learn More About Us
+      </a>
+    </div>
   </div>
 </section>
+
 
 
       {/* Services Section */}
@@ -190,6 +202,7 @@ const Home = () => {
 </section>
 <Testimonial />
 
+<ComingSoon />
 
       <Footer />
     </>
